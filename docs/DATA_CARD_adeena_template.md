@@ -1,21 +1,31 @@
-# Urdu BPE corpus — Data Card (Member 1 draft)
+# DATA CARD — Urdu BPE Corpus
 
 ## Sources
 
-| Source | Genre | URL | Licence / terms (verified on) | Collection date | Raw download size (MB) | Extracted text (MB) | Cleaned size (MB) |
-|---|---|---|---|---|---:|---:|---:|
-| Urdu Wikipedia API | Encyclopedia | https://ur.wikipedia.org/w/api.php | Verify CC BY-SA 4.0 and exceptions; keep attribution | TBD | N/A | TBD | TBD |
-| Urdu Wikisource API | Literature | https://ur.wikisource.org/w/api.php | Verify each work's rights and page licence | TBD | N/A | TBD | TBD |
-| UFAL UrMonoCorp | Mixed genres | https://ufal.mff.cuni.cz/node/998 | Non-commercial research; check repository terms | TBD | TBD | TBD | TBD |
+The Urdu corpus was collected from three sources covering encyclopedic, literary, and mixed-domain text.
 
-## Known gaps and biases
+| Source          | Genre        | Raw Size          | Cleaned Size |
+| --------------- | ------------ | ----------------- | ------------ |
+| Urdu Wikipedia  | Encyclopedia | 4.21 MB (interim) | Pending      |
+| Urdu Wikisource | Literature   | 2.03 MB (interim) | Pending      |
+| UFAL UrMonoCorp | Mixed-domain | 717.41 MB         | Pending      |
 
-- To confirm after measurement: encyclopedia and edited literature may overrepresent formal written Urdu.
-- UFAL contains mixed genres but genre proportions are unspecified; do not infer balanced representation.
-- Roman Urdu, regional spelling, colloquial chat and technical jargon may be underrepresented.
-- Wikimedia contributors and curated publications may introduce topic, geographic and temporal biases.
-- Actual genre proportions, cleaning losses, counts, and licences must be verified prior to submission.
+**Source details**
 
-## Sections to complete with the cleaning teammate
-- Corpus totals (MB, documents, words, unique words)
-- Cleaning transformations and the number of bytes removed at each step
+- **Urdu Wikipedia:** https://ur.wikipedia.org/ — Collected independently using the MediaWiki API. Verify the applicable CC BY-SA licensing and attribution requirements.
+- **Urdu Wikisource:** https://ur.wikisource.org/ — Collected independently through the MediaWiki API. Individual works require copyright and licensing verification.
+- **UFAL UrMonoCorp:** https://ufal.mff.cuni.cz/node/998 — Downloaded as a published Urdu corpus. Verify and record the repository's exact terms of use.
+
+Collection dates and final size measurements will be recorded from `source_manifest.csv`.
+
+## Known Gaps and Biases
+
+The corpus combines encyclopedic articles, literary texts, and mixed-domain Urdu. However, the sources introduce several potential biases.
+
+Urdu Wikipedia includes many short, similarly structured articles, particularly about astronomical objects, geographic locations, and biographies. Although random sampling was introduced to improve topic diversity, repeated article patterns may remain.
+
+Urdu Wikisource contains literary prose and poetry, which may overrepresent formal or historical Urdu compared with everyday conversation. UFAL contains material from multiple domains, but its older collection may not fully reflect current vocabulary and language usage.
+
+The corpus may underrepresent Roman Urdu, informal conversations, regional expressions, and modern Urdu-English code-mixing. Some collected texts also contain markup, repeated boilerplate, inconsistent spacing, or Unicode variations that require cleaning.
+
+The final genre distribution and any remaining limitations will be reassessed after cleaning and deduplication.
