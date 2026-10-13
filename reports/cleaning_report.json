@@ -1,0 +1,575 @@
+{
+ "settings": {
+  "sources": [
+   "ufal",
+   "urwiki",
+   "urwikisource",
+   "wikipedia_dump"
+  ],
+  "line_source": [],
+  "chunk_lines": 40,
+  "seed": 1337,
+  "val_frac": 0.01,
+  "test_frac": 0.01,
+  "min_ratio": 0.5,
+  "min_urdu_letters": 2,
+  "min_function_rate": 0.05,
+  "boilerplate_min_docs": 10,
+  "near_dup": 0.8,
+  "min_words": 10,
+  "limit_mb": 0,
+  "keep_work": false,
+  "quiet": true
+ },
+ "machine": {
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel"
+ },
+ "seconds": 2659.8,
+ "totals": {
+  "raw_bytes": 1411969573,
+  "docs_read": 342974,
+  "lines_read": 7522718,
+  "docs_kept": 339466,
+  "final_bytes": 1205049789
+ },
+ "bytes_removed": {
+  "markup": 104909179,
+  "normalize": 17795701,
+  "tail": 26975446,
+  "personal": 191261,
+  "language": 17426014,
+  "nonurdu_doc": 20088753,
+  "exact_dup": 73907,
+  "boilerplate": 18519787,
+  "near_dup": 882988,
+  "short": 56748
+ },
+ "docs_removed": {
+  "markup": 0,
+  "normalize": 0,
+  "tail": 0,
+  "personal": 0,
+  "language": 382,
+  "nonurdu_doc": 1931,
+  "exact_dup": 87,
+  "boilerplate": 16,
+  "near_dup": 238,
+  "short": 854
+ },
+ "lines_removed": {
+  "language": 102237,
+  "boilerplate": 390331
+ },
+ "boilerplate_distinct_lines": 5307,
+ "normalization_rule_counts": {
+  "arabic_yeh_to_urdu_yeh": 603854,
+  "arabic_kaf_to_urdu_kaf": 113402,
+  "arabic_heh_to_heh_goal": 133637,
+  "heh_yeh_above_to_heh_goal_hamza": 185,
+  "teh_marbuta_to_teh_marbuta_goal": 86887,
+  "alef_wasla_to_alef": 262,
+  "tatweel_removed": 14534,
+  "invisible_removed": 10986,
+  "annotation_signs_removed": 56246,
+  "arabic_indic_digits_to_ascii": 16445,
+  "extended_indic_digits_to_ascii": 2993,
+  "number_punctuation_to_ascii": 5975,
+  "typographic_punctuation_to_ascii": 745377,
+  "unicode_spaces_to_space": 100324,
+  "tabs_to_space": 89116,
+  "line_separators_to_newline": 5773423,
+  "zwnj_seen": 7271,
+  "control_chars_removed": 18
+ },
+ "ascii_digit_count": 16530895,
+ "full_stops": 5692141,
+ "spaced_full_stops": 3217622,
+ "scrubbed": {
+  "url": 5641,
+  "email": 21,
+  "handle": 118,
+  "phone": 296
+ },
+ "per_source": {
+  "ufal": {
+   "genre": "mixed web text",
+   "raw_bytes": 717409467,
+   "docs_read": 136615,
+   "lines_read": 5464572,
+   "bytes_removed": {
+    "markup": 0,
+    "normalize": 6779325,
+    "personal": 428,
+    "language": 86676,
+    "boilerplate": 135022
+   },
+   "docs_removed": {},
+   "lines_removed": {
+    "language": 2564,
+    "boilerplate": 3315
+   },
+   "scrubbed": {
+    "url": 0,
+    "email": 0,
+    "handle": 0,
+    "phone": 36
+   },
+   "full_stops": 3169070,
+   "spaced_full_stops": 3169068,
+   "docs_kept": 136615,
+   "final_bytes": 710408016
+  },
+  "urwiki": {
+   "genre": "encyclopedia",
+   "raw_bytes": 55022105,
+   "docs_read": 7961,
+   "lines_read": 178066,
+   "bytes_removed": {
+    "markup": 3775466,
+    "normalize": 799063,
+    "tail": 1359557,
+    "personal": 25451,
+    "language": 1988676,
+    "nonurdu_doc": 2659112,
+    "exact_dup": 18571,
+    "boilerplate": 826912,
+    "short": 927,
+    "near_dup": 11105
+   },
+   "docs_removed": {
+    "nonurdu_doc": 200,
+    "language": 3,
+    "exact_dup": 3,
+    "short": 13,
+    "near_dup": 3,
+    "boilerplate": 2
+   },
+   "lines_removed": {
+    "language": 12216,
+    "boilerplate": 29769
+   },
+   "scrubbed": {
+    "url": 688,
+    "email": 3,
+    "handle": 10,
+    "phone": 26
+   },
+   "full_stops": 205547,
+   "spaced_full_stops": 5252,
+   "docs_kept": 7737,
+   "final_bytes": 43557265
+  },
+  "urwikisource": {
+   "genre": "literature",
+   "raw_bytes": 2028336,
+   "docs_read": 510,
+   "lines_read": 12081,
+   "bytes_removed": {
+    "markup": 1163,
+    "normalize": 24808,
+    "personal": 0,
+    "language": 134,
+    "nonurdu_doc": 208774,
+    "boilerplate": 1111,
+    "near_dup": 25117
+   },
+   "docs_removed": {
+    "nonurdu_doc": 2,
+    "near_dup": 16
+   },
+   "lines_removed": {
+    "language": 14,
+    "boilerplate": 34
+   },
+   "scrubbed": {
+    "url": 0,
+    "email": 0,
+    "handle": 0,
+    "phone": 0
+   },
+   "full_stops": 8363,
+   "spaced_full_stops": 22,
+   "docs_kept": 492,
+   "final_bytes": 1767229
+  },
+  "wikipedia_dump": {
+   "genre": "encyclopedia",
+   "raw_bytes": 637509665,
+   "docs_read": 197888,
+   "lines_read": 1867999,
+   "bytes_removed": {
+    "markup": 101132550,
+    "normalize": 10192505,
+    "tail": 25615889,
+    "personal": 165382,
+    "language": 15350528,
+    "nonurdu_doc": 17220867,
+    "exact_dup": 55336,
+    "boilerplate": 17556742,
+    "short": 55821,
+    "near_dup": 846766
+   },
+   "docs_removed": {
+    "nonurdu_doc": 1729,
+    "language": 379,
+    "exact_dup": 84,
+    "short": 841,
+    "near_dup": 219,
+    "boilerplate": 14
+   },
+   "lines_removed": {
+    "language": 87443,
+    "boilerplate": 357213
+   },
+   "scrubbed": {
+    "url": 4953,
+    "email": 18,
+    "handle": 108,
+    "phone": 234
+   },
+   "full_stops": 2309161,
+   "spaced_full_stops": 43280,
+   "docs_kept": 194622,
+   "final_bytes": 449317279
+  }
+ },
+ "per_source_rule_counts": {
+  "ufal": {
+   "arabic_yeh_to_urdu_yeh": 337303,
+   "arabic_kaf_to_urdu_kaf": 52339,
+   "arabic_heh_to_heh_goal": 51442,
+   "heh_yeh_above_to_heh_goal_hamza": 27,
+   "teh_marbuta_to_teh_marbuta_goal": 0,
+   "alef_wasla_to_alef": 46,
+   "tatweel_removed": 2456,
+   "invisible_removed": 29,
+   "annotation_signs_removed": 28047,
+   "arabic_indic_digits_to_ascii": 0,
+   "extended_indic_digits_to_ascii": 0,
+   "number_punctuation_to_ascii": 1006,
+   "typographic_punctuation_to_ascii": 425127,
+   "unicode_spaces_to_space": 0,
+   "tabs_to_space": 0,
+   "line_separators_to_newline": 0,
+   "zwnj_seen": 0,
+   "control_chars_removed": 1
+  },
+  "urwiki": {
+   "arabic_yeh_to_urdu_yeh": 23622,
+   "arabic_kaf_to_urdu_kaf": 5668,
+   "arabic_heh_to_heh_goal": 7190,
+   "heh_yeh_above_to_heh_goal_hamza": 16,
+   "teh_marbuta_to_teh_marbuta_goal": 6841,
+   "alef_wasla_to_alef": 2,
+   "tatweel_removed": 989,
+   "invisible_removed": 876,
+   "annotation_signs_removed": 3390,
+   "arabic_indic_digits_to_ascii": 957,
+   "extended_indic_digits_to_ascii": 85,
+   "number_punctuation_to_ascii": 334,
+   "typographic_punctuation_to_ascii": 33902,
+   "unicode_spaces_to_space": 8755,
+   "tabs_to_space": 4935,
+   "line_separators_to_newline": 179561,
+   "zwnj_seen": 853,
+   "control_chars_removed": 1
+  },
+  "urwikisource": {
+   "arabic_yeh_to_urdu_yeh": 1864,
+   "arabic_kaf_to_urdu_kaf": 833,
+   "arabic_heh_to_heh_goal": 1654,
+   "heh_yeh_above_to_heh_goal_hamza": 0,
+   "teh_marbuta_to_teh_marbuta_goal": 228,
+   "alef_wasla_to_alef": 0,
+   "tatweel_removed": 1584,
+   "invisible_removed": 1721,
+   "annotation_signs_removed": 1001,
+   "arabic_indic_digits_to_ascii": 187,
+   "extended_indic_digits_to_ascii": 1807,
+   "number_punctuation_to_ascii": 0,
+   "typographic_punctuation_to_ascii": 1878,
+   "unicode_spaces_to_space": 1,
+   "tabs_to_space": 10,
+   "line_separators_to_newline": 0,
+   "zwnj_seen": 32,
+   "control_chars_removed": 0
+  },
+  "wikipedia_dump": {
+   "arabic_yeh_to_urdu_yeh": 241065,
+   "arabic_kaf_to_urdu_kaf": 54562,
+   "arabic_heh_to_heh_goal": 73351,
+   "heh_yeh_above_to_heh_goal_hamza": 142,
+   "teh_marbuta_to_teh_marbuta_goal": 79818,
+   "alef_wasla_to_alef": 214,
+   "tatweel_removed": 9505,
+   "invisible_removed": 8360,
+   "annotation_signs_removed": 23808,
+   "arabic_indic_digits_to_ascii": 15301,
+   "extended_indic_digits_to_ascii": 1101,
+   "number_punctuation_to_ascii": 4635,
+   "typographic_punctuation_to_ascii": 284470,
+   "unicode_spaces_to_space": 91568,
+   "tabs_to_space": 84171,
+   "line_separators_to_newline": 5593862,
+   "zwnj_seen": 6386,
+   "control_chars_removed": 16
+  }
+ },
+ "splits": {
+  "train": {
+   "docs": 332678,
+   "bytes": 1185940982
+  },
+  "val": {
+   "docs": 3394,
+   "bytes": 11931157
+  },
+  "test": {
+   "docs": 3394,
+   "bytes": 12269640
+  }
+ },
+ "examples": {
+  "nonurdu_doc": [
+   [
+    "urwiki",
+    "1010370",
+    "یہ کنڑا سنیما کی قابل ذکر اداکاراؤں کی فہرست ہے۔ آمانی آراتی اڈوانی لکشمی دیوی ائندریتا رے امولیا ایمی جیکسن امبکا (اداکارہ) امروتھا ائینگر انو پربھاکر ارچنا (اداکارہ) ارونا ایرانی اروندھتی ناگ آشا پاریکھ آشیکا رنگناتھ بھانوپریا بھاویا بھاونا راؤ بھاونا بھارتی وشنووردھان بھارگوی نارائن بھومیکا چاولہ"
+   ],
+   [
+    "urwiki",
+    "101308",
+    "تصغیر|350px|فی کس گرین ہاؤس گیس اخراج 2005 تصغیر|350px|فی کس گرین ہاؤس گیس اخراج 2000 تصغیر|350px|فی کس گرین ہاؤس گیس اخراج 2005, مع زمین-استعمال تبدیلی تصغیر|350px|کاربن دو اکسید اخراج میں ذمہ داری یہ فہرست ممالک بلحاظ فی کس گرین ہاؤس گیس اخراج ہے۔ یہ کاربن دو اکسید، میتھین، نائٹرس آکسائڈ، فلورو کا"
+   ],
+   [
+    "urwiki",
+    "101813",
+    "یہ فہرست آسٹریلوی ریاستیں اور علاقہ جات بلحاظ خام ملکی پیداوار ہے۔ ریاست یا علاقہ خام ریاستی پیداوار(ملین آسٹریلوی ڈالر، 2011-12) آبادی(آخر مارچ سہ ماہی 2012) خام ریاستی پیداوار فی کس(آسٹریلوی ڈالر، 2011-12) مساوی ملک بلحاظ آبادی مساوی ملک بلحاظ خام ملکی پیداوار مساوی ملک بلحاظ فی کس خام ملکی پیداوا"
+   ],
+   [
+    "urwiki",
+    "101932",
+    "یہ فہرست ممالک بلحاظ مجموعی مستحکم سرمایہ کاری بطور فیصد خام ملکی پیداوار ہے۔ اس کی معلومات سی آئی اے کی کتاب حقائق عالم سے لی گئی ہیں۔ درجہ ملک سرمایہ کاری (مجموعی مستحکم) (% خام ملکی پیداوار) تاریخ معلومات 1 45.00 2008 تخمینہ 2 44.50 2008 تخمینہ 3 41.40 2008 تخمینہ 4 41.30 2008 تخمینہ 5 40.50 2008"
+   ],
+   [
+    "urwiki",
+    "101969",
+    "تصغیر|حکومتوں کے بجٹ میں آمدنی 2006 یہ فہرست حکومتی بجٹ بلحاظ ملک ہے، اس کی معلومات سی آئی اے کتاب حقائق عالم سے لی گئی ہیں۔ اندازہ بجٹ درجہ ملک آمدنی (ملین امریکی ڈالر) اخراجات (ملین امریکی ڈالر) خسارہ / زائد (ملین امریکی ڈالر) خسارہ / زائد (%) تاریخ 1 2,303,000 3,599,000 -1,296,000 -36.01 % 2011 ت"
+   ],
+   [
+    "urwiki",
+    "1024229",
+    "یہ سولہویں صوبائی اسمبلی پنجاب پنجاب، پاکستان کے پاکستان کے عام انتخابات، 2013ء کے پنجاب صوبائی اسمبلی کے ارکان کی فہرست ہے۔ حلفہ رکن جماعت پی پی-262 عبد المجید خان نیازی پاکستان تحریک انصاف پی پی-1 راجہ اشفاق سرور پاکستان مسلم لیگ (ن) پی پی-4 کوئی نہیں پی پی-16 جہانگیر خانزادہ پاکستان مسلم لیگ (ن) "
+   ],
+   [
+    "urwiki",
+    "1036480",
+    "یہ مسافر ایئر لائنوں کی فہرست ہے۔ thumb|ایزی جیٹ ایئر بس اے 319 بمقام ایمسٹرڈیم ہوائی اڈا سخیپھول ایئر لائنوں کی فہرست افریقا الجزائر ائیر الجیر تسثیلی ایئر لائنز انگولہ thumb|تاگ انگولا ایئر لائنز Boeing 777 تاگ انگولا ایئر لائنز بینن بوٹسوانا ایئر بوٹسوانا برکینا فاسو ایئر برکینا برونڈی کیمرون کیپ"
+   ],
+   [
+    "urwiki",
+    "1038276",
+    "upright|thumb|right|120px| ریمینی کے جڑواں شہر 2010ء میں یہ اطالیہ کے جڑواں شہروں کی فہرست ہے۔ ابانو تیرمے Lipik، کرویئشا سان میگل ڈی ایلینڈے، میکسیکو آڈریا Chieri، اطالیہ مالڈیگیم، بیلجیم رووینی، کرویئشا ایگریجینتو پیرم، روس ٹیمپا، فلوریڈا، ریاستہائے متحدہ والنسین، فرانس آرلون، بیلجیم بنسکا بائسٹری"
+   ],
+   [
+    "urwiki",
+    "104045",
+    "یہ فہرست قومی دار الحکومت و بڑے شہر بلحاظ ملک ہے۔ ممالک ملک دارالحکومت دار الحکومت سے بڑے شہرآ آرمینیا یریوان آسٹریلیا کینبرا سڈنی, ملبورن, برسبین, پرتھ, ایڈیلیڈ, گولڈ کوسٹ, نیو کیسل آسٹریا ویانا آذربائیجان باکو آئس لینڈ ریکیاوک جمہوریہ آئرلینڈ ڈبلنا افغانستان کابل البانیہ تیرانا الجزائر الجزائر شہر"
+   ],
+   [
+    "urwiki",
+    "1043365",
+    "یہ ویسٹ انڈین ٹوئنٹی 20 بین الاقوامی کرکٹ کھلاڑیوں کی فہرست ہے ایک ٹوئنٹی20 بین الاقوامی دو نمائندہ ٹیموں کے درمیان ایک بین الاقوامی کرکٹ میچ ہے، ہر ایک کو ایک روزہ کا درجہ حاصل ہے، جیسا کہ بین الاقوامی کرکٹ کونسل کے ذریعے طے کیا جاتا ہے۔ ٹوئنٹی 20 کرکٹ کے قوانین کے تحت ٹوئنٹی 20 بین الاقوامی کھیلا "
+   ],
+   [
+    "urwiki",
+    "1045810",
+    "یہ ان لوگوں اور دیگر موضوعات کی فہرست جن کو ٹائم (رسالہ) کے سرورق پر 1930ء کی دہائی میں جگہ ملی۔ ٹائم پہلی بار 1923ء میں شائع ہوا تھا۔ بطور ٹائم جو جلد ہی امریکا کے قد آور نیوز میگزین میں شمار ہونے لگا، ٹائم کے سرورق پر ایک ظہور ہوا، شہرت یا بدنامی میں نمایاں ہونے کا اشارہ بن گیا۔ دیگر دہائیوں کے لی"
+   ],
+   [
+    "urwiki",
+    "1046129",
+    "درج ذیل کرکٹ کے میدانوں کی فہرست ہے، جو صلاحیت کے لحاظ سے ترتیب دی گئی ہے۔ جولائی 2024ء تک کے مطابق فی الحال 1,000 سے زیادہ کی گنجائش والے کچھ میدان بھی شامل ہیں۔ فعال اسٹیڈیم 100,000 سے زیادہ گنجائش گراؤنڈگنجائششہرملکمیزبان ٹیمتصویرنریندر مودی اسٹیڈیم132,000احمد آباد (بھارت) بھارت بھارت, گجرات, گجر"
+   ],
+   [
+    "urwiki",
+    "1046444",
+    "یہ ان لوگوں اور دیگر موضوعات کی فہرست جن کو ٹائم (رسالہ) کے سرورق پر 1940ء کی دہائی میں جگہ ملی۔ ٹائم پہلی بار 1923ء میں شائع ہوا تھا۔ بطور ٹائم جو جلد ہی امریکا کے قد آور نیوز میگزین میں شمار ہونے لگا، ٹائم کے سرورق پر ایک ظہور ہوا، شہرت یا بدنامی میں نمایاں ہونے کا اشارہ بن گیا۔ دیگر دہائیوں کے لی"
+   ],
+   [
+    "urwiki",
+    "1046980",
+    "یہ ان لوگوں اور دیگر موضوعات کی فہرست جن کو ٹائم (رسالہ) کے سرورق پر 1950ء کی دہائی میں جگہ ملی۔ ٹائم پہلی بار 1923ء میں شائع ہوا تھا۔ بطور ٹائم جو جلد ہی امریکا کے قد آور نیوز میگزین میں شمار ہونے لگا، ٹائم کے سرورق پر ایک ظہور ہوا، شہرت یا بدنامی میں نمایاں ہونے کا اشارہ بن گیا۔ دیگر دہائیوں کے لی"
+   ],
+   [
+    "urwiki",
+    "1047813",
+    "یہ فہرست ماضی اور مستقبل کی کثافت آبادی کو ظاہر کرنے والے ممالک کی فہرست ہے، جس کا تخمینہ 1950 سے 2100 تک لگایا گیا ہے، جیسا کہ اقوام متحدہ کے پاپولیشن ڈویژن کے عالمی آبادی کے امکانات کا ڈیٹا بیس \"ورلڈ پاپولیشن پراسپیکٹ ڈیٹا بیس \"کی 2017 کی نظرثانی سے اندازہ لگایا گیا ہے۔ آبادی کی کثافت انسانی باشند"
+   ]
+  ],
+  "boilerplate": [
+   [
+    "دریافت",
+    26639
+   ],
+   [
+    "طبیعی خصوصیات",
+    26593
+   ],
+   [
+    "مداری خصوصیات",
+    26586
+   ],
+   [
+    "تفصیلات",
+    17599
+   ],
+   [
+    "یہ مرکب مختلف کیمیائی اور صنعتی مقاصد کے لیے استعمال ہوتا ہے۔ نیز کیمیائی صنعت میں بھی مختلف تعاملات اور ترکیبوں میں اس کا استعمال عام ہے۔",
+    13361
+   ],
+   [
+    "دیگر کیمیائی مرکبات کی طرح، اس کے استعمال کے دوران میں بھی مناسب حفاظتی تدبیر (جیسے دستانے اور چشمے کا استعمال) اختیار کرنا ضروری ہے تاکہ کسی بھی ممکنہ نقصان سے بچا جا سکے۔ لہٰذا اسے آگ اور حرارت کے ذرائع سے دور رکھنا لازمی ہے۔ زیادہ مقدار میں یا لاپروائی سے اس کا استعمال انسانی صحت کے لیے نقصان دہ ہو سکتا ہے۔",
+    11939
+   ],
+   [
+    "وفات",
+    7853
+   ],
+   [
+    "کیریئر",
+    6841
+   ],
+   [
+    "تاریخ",
+    6383
+   ],
+   [
+    "انتقال",
+    5213
+   ],
+   [
+    "ابتدائی زندگی",
+    4368
+   ],
+   [
+    "جڑواں شہر",
+    3525
+   ],
+   [
+    "ذاتی زندگی",
+    2993
+   ],
+   [
+    "کہانی",
+    2935
+   ],
+   [
+    "تصانیف",
+    2344
+   ],
+   [
+    "حالات زندگی",
+    2181
+   ],
+   [
+    "ابتدائی زندگی اور تعلیم",
+    1947
+   ],
+   [
+    "تعلیم",
+    1894
+   ],
+   [
+    "پس منظر",
+    1652
+   ],
+   [
+    "ولادت",
+    1409
+   ],
+   [
+    "اعزازات",
+    1237
+   ],
+   [
+    "دستے",
+    1192
+   ],
+   [
+    "بین الاقوامی کیریئر",
+    1168
+   ],
+   [
+    "سیاسی کیریئر",
+    1126
+   ],
+   [
+    "جراح اور تعدیل",
+    965
+   ],
+   [
+    "کرکٹ کیریئر",
+    951
+   ],
+   [
+    "نسب",
+    942
+   ],
+   [
+    "تلامذہ",
+    911
+   ],
+   [
+    "پیدائش",
+    895
+   ],
+   [
+    "پہلا ایک روزہ بین الاقوامی",
+    874
+   ],
+   [
+    "دوسرا ایک روزہ بین الاقوامی",
+    870
+   ],
+   [
+    "تیسرا ایک روزہ بین الاقوامی",
+    820
+   ],
+   [
+    "ایک روزہ بین الاقوامی سیریز",
+    820
+   ],
+   [
+    "زندگی",
+    810
+   ],
+   [
+    "سیرت",
+    804
+   ],
+   [
+    "روایت حدیث",
+    800
+   ],
+   [
+    "تعارف",
+    784
+   ],
+   [
+    "فائنل",
+    761
+   ],
+   [
+    "پوائنٹس ٹیبل",
+    738
+   ],
+   [
+    "سوانح",
+    710
+   ]
+  ]
+ }
+}

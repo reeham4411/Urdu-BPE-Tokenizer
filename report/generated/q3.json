@@ -1,0 +1,471 @@
+{
+ "ranking_by": "Ours (Urdu BPE 50k)",
+ "ranked": [
+  "URL and code",
+  "Unnormalised Arabic letters",
+  "Urdu digits",
+  "Roman Urdu",
+  "Social media",
+  "Hindi (Devanagari)",
+  "Missing spaces"
+ ],
+ "results": {
+  "Roman Urdu": {
+   "text": "Yaar tum kal kahan thay? Main ne tumhein bohat dhoonda magar tum mile hi nahi.",
+   "why": "Urdu written in Latin letters is absent from the corpus by design (DATA_CARD.md), so the few Latin merges come from English code-mixing and do not cover Urdu spelt in Latin.",
+   "bytes": 78,
+   "chars": 78,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 35,
+    "bytes_per_token": 2.23,
+    "pieces": [
+     "Y",
+     "a",
+     "ar",
+     " t",
+     "um",
+     " k",
+     "al",
+     " k",
+     "ahan",
+     " th",
+     "ay",
+     "?",
+     " Main",
+     " ne"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 30,
+    "bytes_per_token": 2.6,
+    "pieces": [
+     "Y",
+     "a",
+     "ar",
+     " tum",
+     " k",
+     "al",
+     " k",
+     "ahan",
+     " th",
+     "ay",
+     "?",
+     " Main",
+     " ne",
+     " tum"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 24,
+    "bytes_per_token": 3.25,
+    "pieces": [
+     "Y",
+     "aar",
+     " tum",
+     " kal",
+     " k",
+     "ahan",
+     " thay",
+     "?",
+     " Main",
+     " ne",
+     " tum",
+     "hein",
+     " bo",
+     "hat"
+    ]
+   }
+  },
+  "Unnormalised Arabic letters": {
+   "text": "كتاب ميں يہ لكھا ہے كہ هم ايك ہيں",
+   "why": "Typed with Arabic kaf, yeh and heh (U+0643, U+064A, U+0647). normalize() maps them to the Urdu letters, so they almost never occur in train.txt and the tokenizer falls back to two bytes per letter. Normalising the input first fixes it.",
+   "bytes": 58,
+   "chars": 33,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 30,
+    "bytes_per_token": 1.93,
+    "pieces": [
+     "<d9>",
+     "<83>",
+     "تاب",
+     " م",
+     "<d9>",
+     "<8a>",
+     "ں",
+     "<20 d9>",
+     "<8a>",
+     "ہ",
+     " ل",
+     "<d9>",
+     "<83>",
+     "ھا"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 43,
+    "bytes_per_token": 1.35,
+    "pieces": [
+     "<d9>",
+     "<83>",
+     "ت",
+     "<d8 a7 d8>",
+     "<a8>",
+     " م",
+     "ي",
+     "<da>",
+     "<ba>",
+     "<20 d9>",
+     "<8a>",
+     "<db>",
+     "<81>",
+     " "
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 16,
+    "bytes_per_token": 3.62,
+    "pieces": [
+     "كتاب",
+     " مي",
+     "ں",
+     " ي",
+     "ہ",
+     " لك",
+     "ھا",
+     " ہے",
+     " ك",
+     "ہ",
+     " هم",
+     " اي",
+     "ك",
+     " ہ"
+    ]
+   }
+  },
+  "Urdu digits": {
+   "text": "۱۴ اگست ۱۹۴۷ اور ۲۰۲۶ کی قیمت ۱۲۵۰ روپے",
+   "why": "Extended Arabic-Indic digits were converted to ASCII during cleaning, so every Urdu digit costs two byte tokens.",
+   "bytes": 70,
+   "chars": 39,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 36,
+    "bytes_per_token": 1.94,
+    "pieces": [
+     "<db>",
+     "<b1>",
+     "<db>",
+     "<b4>",
+     " اگست",
+     " ",
+     "<db>",
+     "<b1>",
+     "<db>",
+     "<b9>",
+     "<db>",
+     "<b4>",
+     "<db>",
+     "<b7>"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 59,
+    "bytes_per_token": 1.19,
+    "pieces": [
+     "<db>",
+     "<b1>",
+     "<db>",
+     "<b4>",
+     " ",
+     "ا",
+     "<da>",
+     "<af>",
+     "س",
+     "ت",
+     " ",
+     "<db>",
+     "<b1>",
+     "<db>"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 19,
+    "bytes_per_token": 3.68,
+    "pieces": [
+     "۱۴",
+     " اگ",
+     "ست",
+     " ",
+     "۱۹",
+     "۴",
+     "۷",
+     " اور",
+     " ",
+     "۲۰",
+     "۲",
+     "۶",
+     " کی",
+     " قیمت"
+    ]
+   }
+  },
+  "Social media": {
+   "text": "زبردست!!! 😂😂🔥🔥 #پاکستان_زندہ_باد @ali_khan کیا بات ہے 👏👏",
+   "why": "Emoji, hashtags and handles were removed or never present in the cleaned corpus; each emoji is four bytes with no learned merges.",
+   "bytes": 102,
+   "chars": 56,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 37,
+    "bytes_per_token": 2.76,
+    "pieces": [
+     "زبردست",
+     "!!",
+     "!",
+     " ",
+     "<f0 9f>",
+     "<98>",
+     "<82>",
+     "<f0 9f>",
+     "<98>",
+     "<82>",
+     "<f0 9f>",
+     "<94>",
+     "<a5>",
+     "<f0 9f>"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 63,
+    "bytes_per_token": 1.62,
+    "pieces": [
+     "<d8>",
+     "<b2>",
+     "ب",
+     "ر",
+     "د",
+     "س",
+     "ت",
+     "!!!",
+     "<20 f0 9f 98>",
+     "<82>",
+     "<f0 9f 98>",
+     "<82>",
+     "<f0 9f>",
+     "<94>"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 25,
+    "bytes_per_token": 4.08,
+    "pieces": [
+     "زب",
+     "رد",
+     "ست",
+     "!!!",
+     " 😂",
+     "😂",
+     "🔥",
+     "🔥",
+     " #",
+     "پاکستان",
+     "_",
+     "زند",
+     "ہ",
+     "_"
+    ]
+   }
+  },
+  "Missing spaces": {
+   "text": "لیکنوہکہتاہےکہمیںکلآؤںگا",
+   "why": "Urdu writers often drop spaces after non-joining letters because the text still looks right; the pre-tokeniser then sees one long rare word.",
+   "bytes": 48,
+   "chars": 24,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 10,
+    "bytes_per_token": 4.8,
+    "pieces": [
+     "لیکن",
+     "وہ",
+     "کہ",
+     "تاہے",
+     "کہ",
+     "میں",
+     "کل",
+     "آ",
+     "ؤں",
+     "گا"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 40,
+    "bytes_per_token": 1.2,
+    "pieces": [
+     "ل",
+     "<db>",
+     "<8c>",
+     "<da>",
+     "<a9>",
+     "ن",
+     "و",
+     "<db>",
+     "<81>",
+     "<da>",
+     "<a9>",
+     "<db>",
+     "<81>",
+     "ت"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 13,
+    "bytes_per_token": 3.69,
+    "pieces": [
+     "لی",
+     "کن",
+     "وہ",
+     "کہ",
+     "تا",
+     "ہے",
+     "کہ",
+     "میں",
+     "کل",
+     "آ",
+     "ؤ",
+     "ں",
+     "گا"
+    ]
+   }
+  },
+  "URL and code": {
+   "text": "https://www.example.com/news/2026/10/urdu?id=4471&lang=ur",
+   "why": "URLs were scrubbed from the corpus as personal data, so their pieces are rare.",
+   "bytes": 57,
+   "chars": 57,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 38,
+    "bytes_per_token": 1.5,
+    "pieces": [
+     "ht",
+     "t",
+     "ps",
+     ":",
+     "//",
+     "ww",
+     "w",
+     ".",
+     "ex",
+     "ample",
+     ".",
+     "com",
+     "/",
+     "new"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 26,
+    "bytes_per_token": 2.19,
+    "pieces": [
+     "https",
+     "://",
+     "www",
+     ".",
+     "example",
+     ".",
+     "com",
+     "/",
+     "news",
+     "/",
+     "20",
+     "26",
+     "/",
+     "10"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 21,
+    "bytes_per_token": 2.71,
+    "pieces": [
+     "https",
+     "://",
+     "www",
+     ".example",
+     ".com",
+     "/news",
+     "/",
+     "202",
+     "6",
+     "/",
+     "10",
+     "/",
+     "urdu",
+     "?id"
+    ]
+   }
+  },
+  "Hindi (Devanagari)": {
+   "text": "उर्दू और हिंदी बोलचाल में लगभग एक जैसी हैं।",
+   "why": "The same spoken language in another script: Devanagari never occurs in train.txt, so each character is three byte tokens.",
+   "bytes": 113,
+   "chars": 43,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 35,
+    "bytes_per_token": 3.23,
+    "pieces": [
+     "<e0 a4>",
+     "<89>",
+     "<e0 a4 b0 e0 a5 8d e0 a4>",
+     "<a6>",
+     "ू",
+     " और",
+     " ह",
+     "<e0 a4 bf e0 a4>",
+     "<82 e0 a4>",
+     "<a6>",
+     "ी",
+     " ब",
+     "ो",
+     "ल"
+    ]
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 69,
+    "bytes_per_token": 1.64,
+    "pieces": [
+     "<e0 a4>",
+     "<89>",
+     "<e0 a4>",
+     "<b0>",
+     "<e0 a5>",
+     "<8d>",
+     "<e0 a4>",
+     "<a6>",
+     "<e0 a5>",
+     "<82>",
+     "<20 e0 a4>",
+     "<94>",
+     "<e0 a4>",
+     "<b0>"
+    ]
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 14,
+    "bytes_per_token": 8.07,
+    "pieces": [
+     "उ",
+     "र्द",
+     "ू",
+     " और",
+     " हिंदी",
+     " बोल",
+     "च",
+     "ाल",
+     " में",
+     " लगभग",
+     " एक",
+     " जैसी",
+     " हैं",
+     "।"
+    ]
+   }
+  }
+ }
+}

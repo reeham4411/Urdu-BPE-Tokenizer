@@ -1,0 +1,16 @@
+{
+ "variant_training_seconds": null,
+ "results": {
+  "one digit per piece (final)": {
+   "tokens": 1864014,
+   "number_tokens": 106164,
+   "digit_tokens_in_vocab": 0
+  },
+  "one to three digits (variant)": {
+   "tokens": 1814905,
+   "number_tokens": 54761,
+   "digit_tokens_in_vocab": 1822
+  }
+ },
+ "extra_tokens_percent": 2.706
+}

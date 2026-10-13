@@ -4,4 +4,10 @@ __pycache__/
 *.pyc
 data/raw/
 data/downloads/
+data/clean/
+data/interim/
 evidence/logs/
+data/bpe_work/
+*.bin
+report/report.html
+v1_backup/

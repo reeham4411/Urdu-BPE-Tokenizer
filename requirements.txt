@@ -2,3 +2,5 @@ requests>=2.32,<3
 python-dotenv>=1.0,<2
 mwparserfromhell>=0.6,<1
 tqdm>=4.66,<5
+numpy>=1.26
+regex>=2024.0

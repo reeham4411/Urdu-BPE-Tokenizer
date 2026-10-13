@@ -33,10 +33,10 @@ def download(url, target):
     print('Downloaded', target, 'bytes:', target.stat().st_size)
 
 
-def extract(source, limit=0):
-    destination = ROOT / 'data' / 'raw' / 'wikipedia_dump'
+def extract(source, limit=0, destination=None, api_dir=None):
+    destination = destination or ROOT / 'data' / 'raw' / 'wikipedia_dump'
     destination.mkdir(parents=True, exist_ok=True)
-    api_dir = ROOT / 'data' / 'raw' / 'urwiki'
+    api_dir = api_dir or ROOT / 'data' / 'raw' / 'urwiki'
     saved = 0
     ns = '{http://www.mediawiki.org/xml/export-0.11/}'
     with bz2.open(source, 'rb') as stream:
@@ -79,6 +79,10 @@ if __name__ == '__main__':
     sources.add_argument('--url', help='Verified dated official XML .bz2 dump URL')
     sources.add_argument('--file', type=Path, help='Already downloaded XML .bz2 dump')
     parser.add_argument('--max-pages', type=int, default=0)
+    parser.add_argument('--out', type=Path, default=None,
+                        help='output folder (default: data/raw/wikipedia_dump)')
+    parser.add_argument('--api-dir', type=Path, default=None,
+                        help='urwiki API pages to skip (default: data/raw/urwiki)')
     args = parser.parse_args()
     if args.url:
         name = args.url.split('/')[-1]
@@ -90,4 +94,4 @@ if __name__ == '__main__':
         file = args.file
     if not file.exists():
         raise SystemExit('Local dump file not found')
-    extract(file, args.max_pages)
+    extract(file, args.max_pages, args.out, args.api_dir)

@@ -1,0 +1,152 @@
+{
+ "tokenizer": "Ours (Urdu BPE 50k)",
+ "cases": [
+  {
+   "case": "Arabic yeh in place of Urdu yeh",
+   "ours_raw": 8,
+   "ours_norm": 3,
+   "o200k_raw": 4,
+   "o200k_norm": 3
+  },
+  {
+   "case": "Alef maksura at the end of a word",
+   "ours_raw": 7,
+   "ours_norm": 3,
+   "o200k_raw": 7,
+   "o200k_norm": 6
+  },
+  {
+   "case": "Arabic kaf in place of Urdu kaf",
+   "ours_raw": 7,
+   "ours_norm": 3,
+   "o200k_raw": 4,
+   "o200k_norm": 5
+  },
+  {
+   "case": "Arabic heh in place of heh goal",
+   "ours_raw": 8,
+   "ours_norm": 3,
+   "o200k_raw": 6,
+   "o200k_norm": 7
+  },
+  {
+   "case": "Do-chashmi heh is a different letter",
+   "ours_raw": 4,
+   "ours_norm": 4,
+   "o200k_raw": 6,
+   "o200k_norm": 6
+  },
+  {
+   "case": "Tatweel stretching",
+   "ours_raw": 7,
+   "ours_norm": 2,
+   "o200k_raw": 4,
+   "o200k_norm": 3
+  },
+  {
+   "case": "ZWNJ inside a compound is kept",
+   "ours_raw": 4,
+   "ours_norm": 4,
+   "o200k_raw": 8,
+   "o200k_norm": 8
+  },
+  {
+   "case": "Stray ZWNJ at word edges is dropped",
+   "ours_raw": 4,
+   "ours_norm": 2,
+   "o200k_raw": 6,
+   "o200k_norm": 4
+  },
+  {
+   "case": "ZWJ and direction marks",
+   "ours_raw": 8,
+   "ours_norm": 2,
+   "o200k_raw": 6,
+   "o200k_norm": 3
+  },
+  {
+   "case": "Urdu digits",
+   "ours_raw": 17,
+   "ours_norm": 9,
+   "o200k_raw": 10,
+   "o200k_norm": 9
+  },
+  {
+   "case": "Arabic-Indic digits and decimal mark",
+   "ours_raw": 14,
+   "ours_norm": 8,
+   "o200k_raw": 10,
+   "o200k_norm": 7
+  },
+  {
+   "case": "Non-breaking spaces and runs of spaces",
+   "ours_raw": 12,
+   "ours_norm": 4,
+   "o200k_raw": 10,
+   "o200k_norm": 6
+  },
+  {
+   "case": "Blank lines and stray line breaks",
+   "ours_raw": 11,
+   "ours_norm": 5,
+   "o200k_raw": 12,
+   "o200k_norm": 11
+  },
+  {
+   "case": "Space before the Urdu full stop",
+   "ours_raw": 12,
+   "ours_norm": 10,
+   "o200k_raw": 12,
+   "o200k_norm": 12
+  },
+  {
+   "case": "Diacritics are kept",
+   "ours_raw": 5,
+   "ours_norm": 5,
+   "o200k_raw": 8,
+   "o200k_norm": 8
+  },
+  {
+   "case": "Repeated diacritic",
+   "ours_raw": 4,
+   "ours_norm": 3,
+   "o200k_raw": 6,
+   "o200k_norm": 4
+  },
+  {
+   "case": "Honorific sign above a name",
+   "ours_raw": 4,
+   "ours_norm": 2,
+   "o200k_raw": 5,
+   "o200k_norm": 3
+  },
+  {
+   "case": "Arabic presentation forms",
+   "ours_raw": 16,
+   "ours_norm": 4,
+   "o200k_raw": 13,
+   "o200k_norm": 5
+  },
+  {
+   "case": "Curly quotes and dashes",
+   "ours_raw": 14,
+   "ours_norm": 11,
+   "o200k_raw": 13,
+   "o200k_norm": 13
+  },
+  {
+   "case": "Code-mixed text is untouched",
+   "ours_raw": 14,
+   "ours_norm": 14,
+   "o200k_raw": 11,
+   "o200k_norm": 11
+  },
+  {
+   "case": "Roman Urdu is untouched",
+   "ours_raw": 13,
+   "ours_norm": 13,
+   "o200k_raw": 9,
+   "o200k_norm": 9
+  }
+ ]
+}

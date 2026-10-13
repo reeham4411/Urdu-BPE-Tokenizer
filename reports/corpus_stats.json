@@ -1,0 +1,295 @@
+{
+ "seconds": 196.1,
+ "splits": {
+  "train": {
+   "bytes": 1185940982,
+   "mb": 1185.94,
+   "documents": 332678,
+   "words": 144880762,
+   "unique_words": 1402296,
+   "lines": 6772583
+  },
+  "val": {
+   "bytes": 11931157,
+   "mb": 11.93,
+   "documents": 3394,
+   "words": 1457712,
+   "unique_words": 71539,
+   "lines": 69866
+  },
+  "test": {
+   "bytes": 12269640,
+   "mb": 12.27,
+   "documents": 3394,
+   "words": 1495267,
+   "unique_words": 73217,
+   "lines": 71429
+  }
+ },
+ "total": {
+  "bytes": 1210141779,
+  "documents": 339466,
+  "words": 147833741,
+  "lines": 6913878,
+  "mb": 1210.14,
+  "unique_words": 1420018
+ },
+ "per_source": {
+  "ufal": {
+   "docs": 136615,
+   "bytes": 712457241,
+   "words": 88490984,
+   "lines": 5458693,
+   "mb": 712.46,
+   "unique_words": 569762,
+   "share_of_bytes": 0.5887
+  },
+  "wikipedia_dump": {
+   "docs": 194622,
+   "bytes": 452236609,
+   "words": 53889952,
+   "lines": 1322687,
+   "mb": 452.24,
+   "unique_words": 969259,
+   "share_of_bytes": 0.3737
+  },
+  "urwiki": {
+   "docs": 7737,
+   "bytes": 43673320,
+   "words": 5221661,
+   "lines": 121163,
+   "mb": 43.67,
+   "unique_words": 192998,
+   "share_of_bytes": 0.0361
+  },
+  "urwikisource": {
+   "docs": 492,
+   "bytes": 1774609,
+   "words": 231144,
+   "lines": 11335,
+   "mb": 1.77,
+   "unique_words": 17448,
+   "share_of_bytes": 0.0015
+  }
+ },
+ "per_source_split": {
+  "train/ufal": {
+   "docs": 133883,
+   "bytes": 698181900,
+   "words": 86718255,
+   "lines": 5349526
+  },
+  "train/wikipedia_dump": {
+   "docs": 190730,
+   "bytes": 443355648,
+   "words": 52834804,
+   "lines": 1294416
+  },
+  "train/urwiki": {
+   "docs": 7583,
+   "bytes": 42642189,
+   "words": 5098367,
+   "lines": 117528
+  },
+  "train/urwikisource": {
+   "docs": 482,
+   "bytes": 1761245,
+   "words": 229336,
+   "lines": 11113
+  },
+  "val/wikipedia_dump": {
+   "docs": 1946,
+   "bytes": 4347305,
+   "words": 516417,
+   "lines": 14079
+  },
+  "val/ufal": {
+   "docs": 1366,
+   "bytes": 7113974,
+   "words": 883771,
+   "lines": 54578
+  },
+  "val/urwiki": {
+   "docs": 77,
+   "bytes": 462713,
+   "words": 56551,
+   "lines": 1095
+  },
+  "val/urwikisource": {
+   "docs": 5,
+   "bytes": 7165,
+   "words": 973,
+   "lines": 114
+  },
+  "test/wikipedia_dump": {
+   "docs": 1946,
+   "bytes": 4533656,
+   "words": 538731,
+   "lines": 14192
+  },
+  "test/ufal": {
+   "docs": 1366,
+   "bytes": 7161367,
+   "words": 888958,
+   "lines": 54589
+  },
+  "test/urwiki": {
+   "docs": 77,
+   "bytes": 568418,
+   "words": 66743,
+   "lines": 2540
+  },
+  "test/urwikisource": {
+   "docs": 5,
+   "bytes": 6199,
+   "words": 835,
+   "lines": 108
+  }
+ },
+ "oov_against_train": {
+  "val": {
+   "token_rate": 0.00656,
+   "type_rate": 0.11882
+  },
+  "test": {
+   "token_rate": 0.00708,
+   "type_rate": 0.12645
+  }
+ },
+ "document_words": {
+  "median": 409,
+  "p10": 41,
+  "p90": 744,
+  "max": 118680
+ },
+ "letter_share": {
+  "urdu_script": 0.9831,
+  "latin": 0.0167,
+  "other": 0.0002
+ },
+ "digits": 11024983,
+ "zwnj_in_corpus": 3963,
+ "top_words": [
+  [
+   "کے",
+   4784446
+  ],
+  [
+   "میں",
+   4299205
+  ],
+  [
+   "ہے",
+   3678935
+  ],
+  [
+   "کی",
+   3651214
+  ],
+  [
+   "اور",
+   3045905
+  ],
+  [
+   "سے",
+   2682985
+  ],
+  [
+   "کا",
+   2244481
+  ],
+  [
+   "اس",
+   1988737
+  ],
+  [
+   "نے",
+   1778629
+  ],
+  [
+   "کو",
+   1776088
+  ],
+  [
+   "ہیں",
+   1514401
+  ],
+  [
+   "پر",
+   1357214
+  ],
+  [
+   "کہ",
+   1329318
+  ],
+  [
+   "ایک",
+   1178325
+  ],
+  [
+   "بھی",
+   1065020
+  ],
+  [
+   "یہ",
+   1057715
+  ],
+  [
+   "تو",
+   1023100
+  ],
+  [
+   "کیا",
+   1009449
+  ],
+  [
+   "نہیں",
+   937829
+  ],
+  [
+   "کر",
+   895254
+  ],
+  [
+   "تھا",
+   742212
+  ],
+  [
+   "وہ",
+   735945
+  ],
+  [
+   "ان",
+   716960
+  ],
+  [
+   "ہو",
+   673709
+  ],
+  [
+   "آپ",
+   629601
+  ],
+  [
+   "جو",
+   559181
+  ],
+  [
+   "ہی",
+   554517
+  ],
+  [
+   "لیے",
+   531731
+  ],
+  [
+   "گیا",
+   442940
+  ],
+  [
+   "تھے",
+   406994
+  ]
+ ],
+ "problems": []
+}

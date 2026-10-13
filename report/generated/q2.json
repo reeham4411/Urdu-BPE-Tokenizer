@@ -1,0 +1,157 @@
+{
+ "test": {
+  "words": 1495267,
+  "bytes": 12218730,
+  "Ours (Urdu BPE 50k)": {
+   "tokens": 1864014,
+   "tokens_per_word": 1.247,
+   "bytes_per_token": 6.56
+  },
+  "GPT-2 (gpt2)": {
+   "tokens": 8763431,
+   "tokens_per_word": 5.861,
+   "bytes_per_token": 1.39
+  },
+  "GPT-4o (o200k_base)": {
+   "tokens": 2445261,
+   "tokens_per_word": 1.635,
+   "bytes_per_token": 5.0
+  },
+  "documents": 3394
+ },
+ "inputs": {
+  "News": {
+   "words": 40,
+   "bytes": 323,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 42,
+    "tokens_per_word": 1.05,
+    "bytes_per_token": 7.69
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 236,
+    "tokens_per_word": 5.9,
+    "bytes_per_token": 1.37
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 56,
+    "tokens_per_word": 1.4,
+    "bytes_per_token": 5.77
+   }
+  },
+  "Poetry": {
+   "words": 18,
+   "bytes": 147,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 19,
+    "tokens_per_word": 1.056,
+    "bytes_per_token": 7.74
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 110,
+    "tokens_per_word": 6.111,
+    "bytes_per_token": 1.34
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 31,
+    "tokens_per_word": 1.722,
+    "bytes_per_token": 4.74
+   }
+  },
+  "Urdu with English": {
+   "words": 23,
+   "bytes": 161,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 38,
+    "tokens_per_word": 1.652,
+    "bytes_per_token": 4.24
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 87,
+    "tokens_per_word": 3.783,
+    "bytes_per_token": 1.85
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 25,
+    "tokens_per_word": 1.087,
+    "bytes_per_token": 6.44
+   }
+  },
+  "Roman Urdu": {
+   "words": 20,
+   "bytes": 104,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 49,
+    "tokens_per_word": 2.45,
+    "bytes_per_token": 2.12
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 41,
+    "tokens_per_word": 2.05,
+    "bytes_per_token": 2.54
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 33,
+    "tokens_per_word": 1.65,
+    "bytes_per_token": 3.15
+   }
+  },
+  "Numbers and dates": {
+   "words": 34,
+   "bytes": 219,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 66,
+    "tokens_per_word": 1.941,
+    "bytes_per_token": 3.32
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 143,
+    "tokens_per_word": 4.206,
+    "bytes_per_token": 1.53
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 58,
+    "tokens_per_word": 1.706,
+    "bytes_per_token": 3.78
+   }
+  },
+  "Diacritics": {
+   "words": 18,
+   "bytes": 169,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 31,
+    "tokens_per_word": 1.722,
+    "bytes_per_token": 5.45
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 124,
+    "tokens_per_word": 6.889,
+    "bytes_per_token": 1.36
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 47,
+    "tokens_per_word": 2.611,
+    "bytes_per_token": 3.6
+   }
+  },
+  "Personal names": {
+   "words": 24,
+   "bytes": 231,
+   "Ours (Urdu BPE 50k)": {
+    "tokens": 29,
+    "tokens_per_word": 1.208,
+    "bytes_per_token": 7.97
+   },
+   "GPT-2 (gpt2)": {
+    "tokens": 161,
+    "tokens_per_word": 6.708,
+    "bytes_per_token": 1.43
+   },
+   "GPT-4o (o200k_base)": {
+    "tokens": 45,
+    "tokens_per_word": 1.875,
+    "bytes_per_token": 5.13
+   }
+  }
+ }
+}

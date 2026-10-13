@@ -1,0 +1,19 @@
+{
+ "input": "E:\\LLM A1\\Urdu tokenizer data-20261012T055006Z-1-001\\Urdu tokenizer data\\clean_v2\\train.txt",
+ "input_bytes": 1185940982,
+ "method": "fast",
+ "vocab_size": 50000,
+ "merges": 49743,
+ "seconds": 723.4,
+ "hours": 0.2,
+ "peak_memory_mb": 1667.9,
+ "machine": {
+  "cpu": "11th Gen Intel(R) Core(TM) i5-1145G7 @ 2.60GHz",
+  "logical_cpus": 8,
+  "ram_gb": 15.7,
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10"
+ },
+ "tokenizer_file": "E:\\LLM A1\\Urdu-BPE-Tokenizer-main\\Urdu-BPE-Tokenizer-main\\Urdu-BPE-Tokenizer-main\\tokenizer\\urdu_bpe.json",
+ "finished": "2026-10-13 12:35:43"
+}

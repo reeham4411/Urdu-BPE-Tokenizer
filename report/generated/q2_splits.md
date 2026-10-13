@@ -1,0 +1,7 @@
+| Word | Ours (Urdu BPE 50k) | GPT-2 (gpt2) | GPT-4o (o200k_base) |
+|---|---|---|---|
+| اُردُو | <code>اُ</code> <code>رد</code> <code>ُو</code> | <code>ا</code> <code>&lt;d9&gt;</code> <code>&lt;8f&gt;</code> <code>ر</code> <code>د</code> <code>&lt;d9&gt;</code> <code>&lt;8f&gt;</code> <code>و</code> | <code>ا</code> <code>ُ</code> <code>رد</code> <code>ُ</code> <code>و</code> |
+| پاکستان | <code>پاکستان</code> | <code>&lt;d9&gt;</code> <code>&lt;be&gt;</code> <code>ا</code> <code>&lt;da&gt;</code> <code>&lt;a9&gt;</code> <code>س</code> <code>ت</code> <code>ا</code> <code>ن</code> | <code>پاکستان</code> |
+| خواہشیں | <code>خواہ</code> <code>شیں</code> | <code>&lt;d8&gt;</code> <code>&lt;ae&gt;</code> <code>و</code> <code>ا</code> <code>&lt;db&gt;</code> <code>&lt;81&gt;</code> <code>&lt;d8&gt;</code> <code>&lt;b4&gt;</code> <code>&lt;db&gt;</code> <code>&lt;8c&gt;</code> <code>&lt;da&gt;</code> <code>&lt;ba&gt;</code> | <code>خوا</code> <code>ہ</code> <code>ش</code> <code>یں</code> |
+| یوسفزئی | <code>یوسف</code> <code>زئی</code> | <code>&lt;db&gt;</code> <code>&lt;8c&gt;</code> <code>و</code> <code>س</code> <code>&lt;d9&gt;</code> <code>&lt;81&gt;</code> <code>&lt;d8&gt;</code> <code>&lt;b2&gt;</code> <code>&lt;d8&gt;</code> <code>&lt;a6&gt;</code> <code>&lt;db&gt;</code> <code>&lt;8c&gt;</code> | <code>ی</code> <code>وسف</code> <code>ز</code> <code>ئی</code> |
+| 1947 | <code>1</code> <code>9</code> <code>4</code> <code>7</code> | <code>19</code> <code>47</code> | <code>194</code> <code>7</code> |
